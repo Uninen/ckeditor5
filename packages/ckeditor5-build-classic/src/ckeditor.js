@@ -30,7 +30,7 @@ import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting'
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
-console.log('Unieditor3 in use');
+console.log('Unieditor v6 inited.');
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -72,8 +72,11 @@ ClassicEditor.defaultConfig = {
 			'blockQuote',
 			'|',
 			'insertImage',
+			'mediaEmbed',
+			'|',
 			'undo',
 			'redo',
+			'|',
 			'sourceEditing'
 		],
 	},
@@ -126,7 +129,10 @@ ClassicEditor.defaultConfig = {
             classes: true,
             styles: true
         } ]
-    },
+	},
+	mediaEmbed: {
+		removeProviders: [ 'googleMaps', 'flickr', 'facebook' ]
+	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	language: 'en',
 };
