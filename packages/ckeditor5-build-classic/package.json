@@ -1,6 +1,6 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic",
-  "version": "29.1.0",
+  "name": "@uninen/ckeditor5-build-classic-images",
+  "version": "29.1.0-1",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -26,16 +26,14 @@
     "ckeditor5-metadata.json"
   ],
   "dependencies": {
-    "@ckeditor/ckeditor5-adapter-ckfinder": "^29.1.0",
     "@ckeditor/ckeditor5-autoformat": "^29.1.0",
     "@ckeditor/ckeditor5-basic-styles": "^29.1.0",
     "@ckeditor/ckeditor5-block-quote": "^29.1.0",
-    "@ckeditor/ckeditor5-ckfinder": "^29.1.0",
-    "@ckeditor/ckeditor5-cloud-services": "^29.1.0",
     "@ckeditor/ckeditor5-easy-image": "^29.1.0",
     "@ckeditor/ckeditor5-editor-classic": "^29.1.0",
     "@ckeditor/ckeditor5-essentials": "^29.1.0",
     "@ckeditor/ckeditor5-heading": "^29.1.0",
+    "@ckeditor/ckeditor5-html-support": "^29.1.0",
     "@ckeditor/ckeditor5-image": "^29.1.0",
     "@ckeditor/ckeditor5-indent": "^29.1.0",
     "@ckeditor/ckeditor5-link": "^29.1.0",
@@ -43,6 +41,7 @@
     "@ckeditor/ckeditor5-media-embed": "^29.1.0",
     "@ckeditor/ckeditor5-paragraph": "^29.1.0",
     "@ckeditor/ckeditor5-paste-from-office": "^29.1.0",
+    "@ckeditor/ckeditor5-source-editing": "^29.1.0",
     "@ckeditor/ckeditor5-table": "^29.1.0",
     "@ckeditor/ckeditor5-typing": "^29.1.0"
   },
@@ -62,13 +61,13 @@
     "node": ">=12.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
+  "author": "Ville Säävuori (https://github.com/Uninen)",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
+  "homepage": "https://github.com/Uninen/ckeditor5",
   "bugs": "https://github.com/ckeditor/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "https://github.com/Uninen/ckeditor5.git",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
