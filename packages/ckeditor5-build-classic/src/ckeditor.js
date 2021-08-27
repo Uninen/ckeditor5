@@ -92,14 +92,19 @@ ClassicEditor.defaultConfig = {
 				value: null
 			},
 			{
+				name: 'resizeImage:15',
+				label: '15%',
+				value: '15',
+			},
+			{
+				name: 'resizeImage:20',
+				label: '20%',
+				value: '20',
+			},
+			{
 				name: 'resizeImage:50',
 				label: '50%',
 				value: '50',
-			},
-			{
-				name: 'resizeImage:75',
-				label: '75%',
-				value: '75',
 			},
 		],
 
