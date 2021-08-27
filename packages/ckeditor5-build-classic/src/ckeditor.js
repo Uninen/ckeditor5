@@ -83,39 +83,36 @@ ClassicEditor.defaultConfig = {
   ],
   },
   image: {
-  // Configure the available styles.
   styles: ['full', 'alignLeft', 'alignCenter', 'alignRight'],
-
-  // Configure the available image resize options.
+  resizeUnit: "%",
   resizeOptions: [
       {
-    name: 'resizeImage:original',
-    label: 'Original',
-    value: null
+		name: 'resizeImage:original',
+		icon: 'original',
+		value: null
       },
       {
-    name: 'resizeImage:15',
-    label: '15%',
-    value: '15',
+		name: 'resizeImage:15',
+		icon: 'small',
+		value: '15',
       },
       {
-    name: 'resizeImage:20',
-    label: '20%',
-    value: '20',
+		name: 'resizeImage:20',
+		icon: 'medium',
+		value: '20',
       },
       {
-    name: 'resizeImage:50',
-    label: '50%',
-    value: '50',
+		name: 'resizeImage:50',
+		icon: 'large',
+		value: '50',
       },
   ],
 
   // You need to configure the image toolbar, too, so it shows the new style
   // buttons as well as the resize buttons.
   toolbar: [
-      'imageStyle:full',
+      'imageStyle:block',
       'imageStyle:alignLeft',
-      'imageStyle:alignCenter',
       'imageStyle:alignRight',
       '|',
       'resizeImage',
@@ -135,18 +132,6 @@ ClassicEditor.defaultConfig = {
     },
     {
       name: 'div',
-      attributes: true,
-      classes: true,
-      styles: true
-    },
-    {
-      name: 'figure',
-      attributes: true,
-      classes: true,
-      styles: true
-    },
-    {
-      name: 'img',
       attributes: true,
       classes: true,
       styles: true
