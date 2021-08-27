@@ -31,7 +31,7 @@ import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting'
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
-console.log('Unieditor v6 inited.');
+console.log('Unieditor 29.1.0-5 inited.');
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -83,7 +83,7 @@ ClassicEditor.defaultConfig = {
   ],
   },
   image: {
-  styles: ['full', 'alignLeft', 'alignCenter', 'alignRight'],
+  styles: { options: ['block', 'alignLeft', 'alignRight']},
   resizeUnit: "%",
   resizeOptions: [
       {
@@ -115,7 +115,10 @@ ClassicEditor.defaultConfig = {
       'imageStyle:alignLeft',
       'imageStyle:alignRight',
       '|',
-      'resizeImage',
+      'resizeImage:original',
+      'resizeImage:15',
+      'resizeImage:20',
+      'resizeImage:50',
       '|',
 	  'imageTextAlternative',
 	  'toggleImageCaption',
