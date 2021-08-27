@@ -19,6 +19,7 @@ import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
+import ImageTextAlternative from '@ckeditor/ckeditor5-image/src/imagetextalternative';
 import AutoImage from '@ckeditor/ckeditor5-image/src/autoimage';
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 import Link from '@ckeditor/ckeditor5-link/src/link';
@@ -41,12 +42,13 @@ ClassicEditor.builtinPlugins = [
   BlockQuote,
   Heading,
   Image,
-  ImageCaption,
   ImageStyle,
   ImageToolbar,
   ImageUpload,
   ImageResize,
   ImageInsert,
+  ImageTextAlternative,
+  ImageCaption,
   AutoImage,
   LinkImage,
   Link,
@@ -118,7 +120,8 @@ ClassicEditor.defaultConfig = {
       '|',
       'resizeImage',
       '|',
-      'imageTextAlternative',
+	  'imageTextAlternative',
+	  'toggleImageCaption',
       'linkImage',
   ],
   },
