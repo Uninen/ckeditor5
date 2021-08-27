@@ -34,110 +34,130 @@ console.log('Unieditor v6 inited.');
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
-	Essentials,
-	Autoformat,
-	Bold,
-	Italic,
-	BlockQuote,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	ImageResize,
-	ImageInsert,
-	AutoImage,
-	LinkImage,
-	Link,
-	List,
-	MediaEmbed,
-	Paragraph,
-	GeneralHtmlSupport,
-	SourceEditing
+  Essentials,
+  Autoformat,
+  Bold,
+  Italic,
+  BlockQuote,
+  Heading,
+  Image,
+  ImageCaption,
+  ImageStyle,
+  ImageToolbar,
+  ImageUpload,
+  ImageResize,
+  ImageInsert,
+  AutoImage,
+  LinkImage,
+  Link,
+  List,
+  MediaEmbed,
+  Paragraph,
+  GeneralHtmlSupport,
+  SourceEditing
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
-	toolbar: {
-		items: [
-			'heading',
-			'|',
-			'bold',
-			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'|',
-			'blockQuote',
-			'|',
-			'insertImage',
-			'mediaEmbed',
-			'|',
-			'undo',
-			'redo',
-			'|',
-			'sourceEditing'
-		],
-	},
-	image: {
-		// Configure the available styles.
-		styles: ['full', 'alignLeft', 'alignCenter', 'alignRight'],
+  toolbar: {
+  items: [
+      'heading',
+      '|',
+      'bold',
+      'italic',
+      'link',
+      'bulletedList',
+      'numberedList',
+      '|',
+      'blockQuote',
+      '|',
+      'insertImage',
+      'mediaEmbed',
+      '|',
+      'undo',
+      'redo',
+      '|',
+      'sourceEditing'
+  ],
+  },
+  image: {
+  // Configure the available styles.
+  styles: ['full', 'alignLeft', 'alignCenter', 'alignRight'],
 
-		// Configure the available image resize options.
-		resizeOptions: [
-			{
-				name: 'resizeImage:original',
-				label: 'Original',
-				value: null
-			},
-			{
-				name: 'resizeImage:15',
-				label: '15%',
-				value: '15',
-			},
-			{
-				name: 'resizeImage:20',
-				label: '20%',
-				value: '20',
-			},
-			{
-				name: 'resizeImage:50',
-				label: '50%',
-				value: '50',
-			},
-		],
+  // Configure the available image resize options.
+  resizeOptions: [
+      {
+    name: 'resizeImage:original',
+    label: 'Original',
+    value: null
+      },
+      {
+    name: 'resizeImage:15',
+    label: '15%',
+    value: '15',
+      },
+      {
+    name: 'resizeImage:20',
+    label: '20%',
+    value: '20',
+      },
+      {
+    name: 'resizeImage:50',
+    label: '50%',
+    value: '50',
+      },
+  ],
 
-		// You need to configure the image toolbar, too, so it shows the new style
-		// buttons as well as the resize buttons.
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:alignLeft',
-			'imageStyle:alignCenter',
-			'imageStyle:alignRight',
-			'|',
-			'resizeImage',
-			'|',
-			'imageTextAlternative',
-			'linkImage',
-		],
-	},
-	htmlSupport: {
-        allow: [ {
-            name: 'audio',
-            attributes: true,
-            classes: true,
-            styles: true
-        }, {
-            name: 'div',
-            attributes: true,
-            classes: true,
-            styles: true
-        } ]
-	},
-	mediaEmbed: {
-		removeProviders: [ 'googleMaps', 'flickr', 'facebook' ]
-	},
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en',
+  // You need to configure the image toolbar, too, so it shows the new style
+  // buttons as well as the resize buttons.
+  toolbar: [
+      'imageStyle:full',
+      'imageStyle:alignLeft',
+      'imageStyle:alignCenter',
+      'imageStyle:alignRight',
+      '|',
+      'resizeImage',
+      '|',
+      'imageTextAlternative',
+      'linkImage',
+  ],
+  },
+  htmlSupport: {
+  allow: [
+    {
+      name: 'audio',
+      attributes: true,
+      classes: true,
+      styles: true
+    },
+    {
+      name: 'div',
+      attributes: true,
+      classes: true,
+      styles: true
+    },
+    {
+      name: 'figure',
+      attributes: true,
+      classes: true,
+      styles: true
+    },
+    {
+      name: 'img',
+      attributes: true,
+      classes: true,
+      styles: true
+    },
+    {
+      name: 'video',
+      attributes: true,
+      classes: true,
+      styles: true
+    }
+  ]},
+  mediaEmbed: {
+  removeProviders: [ 'googleMaps', 'flickr', 'facebook' ]
+  },
+  // This value must be kept in sync with the language defined in webpack.config.js.
+  language: 'en',
 };
