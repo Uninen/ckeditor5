@@ -29,9 +29,11 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import GeneralHtmlSupport from '@ckeditor/ckeditor5-html-support/src/generalhtmlsupport';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 
+import pkg from '../package.json'
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
-console.log('Unieditor 29.1.0-5 inited.');
+console.log(`Unieditor ${pkg.version} inited.`);
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
