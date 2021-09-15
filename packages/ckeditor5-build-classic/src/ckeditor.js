@@ -85,7 +85,7 @@ ClassicEditor.defaultConfig = {
   ],
   },
   image: {
-  styles: { options: ['block', 'alignLeft', 'alignRight']},
+  styles: { options: ['block', 'side', 'alignLeft', 'alignRight']},
   resizeUnit: "%",
   resizeOptions: [
       {
@@ -114,6 +114,7 @@ ClassicEditor.defaultConfig = {
   // buttons as well as the resize buttons.
   toolbar: [
       'imageStyle:block',
+      'imageStyle:side',
       'imageStyle:alignLeft',
       'imageStyle:alignRight',
       '|',
